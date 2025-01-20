@@ -1,0 +1,52 @@
+{
+  "name": "relatives-tree",
+  "version": "3.2.1",
+  "description": "Calculates families and nodes positions for rendering a family tree",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "benchmarks": "tsc --project ./benchmarks/tsconfig.json && node ./benchmarks/index.js",
+    "start": "vite",
+    "build": "tsc",
+    "size": "size-limit",
+    "test": "uvu -r tsm __tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanichKotikov/relatives-tree.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SanichKotikov/relatives-tree/issues"
+  },
+  "homepage": "https://github.com/SanichKotikov/relatives-tree",
+  "author": "Sanich Kotikov <sancho@cdrpro.ru> (https://sanichkotikov.github.io)",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "src",
+    "samples"
+  ],
+  "keywords": [
+    "family-tree",
+    "family",
+    "relatives",
+    "node",
+    "connection"
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "11.1.4",
+    "benchmark": "2.1.4",
+    "prettier": "3.3.2",
+    "size-limit": "11.1.4",
+    "tsm": "2.3.0",
+    "typescript": "5.5.3",
+    "uvu": "0.5.6",
+    "vite": "5.3.3"
+  },
+  "size-limit": [
+    {
+      "path": "lib/index.js"
+    }
+  ]
+}
