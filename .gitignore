@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/knoledge-web-ui/node_modules
+/knowledge-web-ui/node_modules
 /.pnp
 .pnp.js
 
